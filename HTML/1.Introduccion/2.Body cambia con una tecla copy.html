@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="utf-8">
+    <title>Fondo de Navidad con Teclado</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #fondoNavidad {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        p {
+            text-align: center;
+            font-size: 80px;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <img id="fondoNavidad" src="imagen1.jpg" alt="Fondo de Navidad">
+
+    <p id="colorido">Presiona una tecla para cambiar el fondo.</p>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            cambiarFondoNavidad();
+        });
+
+        function cambiarFondoNavidad() {
+            // Obtener el elemento del fondo de Navidad
+            var fondoNavidad = document.getElementById('fondoNavidad');
+
+            // Cambiar la imagen del fondo a otra imagen navideña
+            var imagenesNavidad = ["imagen1.jpg", "imagen2.jpg", "imagen3.jpg"];
+            var imagenAleatoria = imagenesNavidad[Math.floor(Math.random() * imagenesNavidad.length)];
+            fondoNavidad.src = imagenAleatoria;
+        }
+    </script>
+</body>
+</html>
+
+
+

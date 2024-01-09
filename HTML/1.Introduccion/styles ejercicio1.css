@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    background-color: yellow;
+}
+
+
+Esto es un texto span {
+    color: red;
+}
+
+centrado de dos colores span:nth-child(2) {
+    color: blue;
+}
+
+.texto-plateado {
+    background-color: silver;
+    padding: 10px; /* Añadir espacio alrededor del texto */
+    color: black; /* Color del texto en el nuevo párrafo */
+}
+
+.texto-tres-colores {
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+.texto-tres-colores span {
+    color: green;
+}
+
+.texto-tres-colores span:nth-child(2) {
+    color: orange;
+}
+
+.texto-tres-colores span:nth-child(3) {
+    color: purple;
+}
+
+.texto-cuatro-colores {
+    background-color: gray;
+    color: white; /* Color del texto en el nuevo párrafo */
+    padding: 10px; /* Añadir espacio alrededor del texto */
+}
